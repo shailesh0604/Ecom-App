@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.sectionpad {
+  padding: 80px 0;
+}
+
+.section-toppad {
+  padding-top: 60px;
+}
+
+.section-bottompad {
+  padding-bottom: 60px;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imgfluid {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a.active hr {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col2 {
+  width: 16.66%;
+  padding: 0 10px;
+}
+
+.col3 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col4 {
+  width: 33.333%;
+  padding: 0 15px;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col12 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.contactwrapper input[type="number"]::-webkit-inner-spin-button,
+.contactwrapper input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.strikeAmount {
+  position: relative;
+}
+
+.strikeAmount::after {
+  content: "";
+  border-bottom: 2px solid #ff532e;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 8px;
+  transform: rotate(-20deg);
+}
+
+/*  */
+
+.collectiontext::after {
+  content: "";
+  border-bottom: 3px solid #374515;
+  position: absolute;
+  top: 13px;
+  right: -75px;
+  width: 65px;
+}
+
+.line::after {
+  content: "";
+  border-bottom: 3.5px solid #374515;
+  position: absolute;
+  top: 20px;
+  right: -75px;
+  width: 65px;
+}
+
+/* shimmer effect */
+
+.shimmerHeadWrap {
+  width: 400px;
+  height: 40px;
+  background-color: #eef0f5;
+  margin-top: 80px;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);
+  background-position: 1200px 100%;
+}
+
+/* form css */
+
+.inputwrap {
+  position: relative;
+}
+
+.formicon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+  .col6 {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .sectionpad {
+    padding: 40px 0;
+  }
+
+  .section-toppad {
+    padding-top: 40px;
+  }
+
+  .collectiontext::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
